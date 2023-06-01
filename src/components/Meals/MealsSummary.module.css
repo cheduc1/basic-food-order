@@ -1,0 +1,17 @@
+.summary{
+  width: 80%;
+  max-width: 45rem;
+  margin: auto;
+  margin-top: -10rem;
+  padding: 0.5rem 1.25rem;
+  position: relative;
+  background-color: #383838;
+  color: white;;
+  box-shadow: 0 10px 12px 10px rgba(0,0,0,0.5);
+  border-radius: 25px;
+  text-align: center;
+}
+.summary h2{
+  font-size: 2rem;
+  margin: 0;
+}
