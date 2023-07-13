@@ -3,8 +3,8 @@ import styles from "./HistoryItem.module.css";
 import Card from "../../UI/Card";
 
 const HistoryItem = (props) => {
-  const itemsList = props.orderItems.map((item) => (
-    <div className={styles["item"]}>
+  const itemsList = props.orderItems.map(item => (
+    <div key={item.id} className={styles["item"]}>
       <h4>{item.name}</h4>
       <div style={{ display: "flex", justifyContent: "space-between" }}>
         <div>Price: {item.price}</div>
