@@ -1,0 +1,10 @@
+.card{
+  margin: 1rem;
+}
+.order-description div,h3,h4,span{
+  margin: 0;
+  padding: 0;
+}
+.item{
+  padding: 0.5rem 0;
+}

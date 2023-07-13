@@ -1,28 +1,13 @@
-import { useState } from "react";
-import Cart from "./components/Cart/Cart";
-import Header from "./components/Layout/Header";
-
-import Meals from "./components/Meals/Meals";
-import CartProvider from "./store/CartProvider";
+import { Route, Routes } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import HistoryPage from "./pages/HistoryPage";
 
 function App() {
-  const [cartIsShown, setCartIsShown] = useState(false);
-
-  const showCartHandler = () => {
-    setCartIsShown(true);
-  }
-  const hideCartHandler = () => {
-    setCartIsShown(false);
-  }
-
   return (
-    <CartProvider>
-      {cartIsShown && <Cart onHide={hideCartHandler} />}
-      <Header onShown={showCartHandler}></Header>
-      <main>
-        <Meals />
-      </main>
-    </CartProvider>
+    <Routes>
+      <Route path="/" element={<HomePage />}></Route>
+      <Route path="/history" element={<HistoryPage />}></Route>
+    </Routes>
   );
 }
 
